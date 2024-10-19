@@ -10,4 +10,5 @@ Build documentation for the covid19 impact project
     [covid19impactproject](https://itp.nyu.edu/covid19impactproject/)
 
   - 146,631,887 bytes (148.3 MB on disk) for 978 items
-  - [preview](./snapshot/itp_nyu_edu-covid19impactproject/covid19impactproject)
+
+  - [covid19impactproject pages preview](https://itp-siteseers.github.io/covid19ip-build/snapshot/itp_nyu_edu-covid19impactproject/covid19impactproject)
