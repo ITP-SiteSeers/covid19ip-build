@@ -1,7 +1,5 @@
 # References
 
-## Changes
-
 ```
 
 # search: <iframe src="https
@@ -15,6 +13,10 @@
 <iframe src="https://leey611.github.io/nyc-covid-map/" id="map-iframe-id" scrolling="no"></iframe>
 
 ```
+
+# Changes
+
+## hide ticker forms
 
 ```
 
