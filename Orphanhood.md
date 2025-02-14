@@ -1,3 +1,9 @@
+# Orphanhood notes
+
+- [COVID-19-Associated-Orphanhood-and-Caregiver-Death](https://publications.aap.org/pediatrics/article/148/6/e2021053760/183446/)
+
+- [./Orphanhood](Orphanhood)
+
 ```
 [] extend to 2023- using John Hopkins data for USA only
 2020-01-22 to 2022-12-31
@@ -45,8 +51,8 @@ https://github.com/ImperialCollegeLondon/covid19_orphans
 code in R.
 
 [+1] Seth Flaxman (s.flaxman@imperial.ac.uk) or
-[+1] Juliette Unwin (h.unwin@imperial.ac.uk) about queries with the calculator. 
+[+1] Juliette Unwin (h.unwin@imperial.ac.uk) about queries with the calculator.
 [+0] Susan Hillis (seh0@cdc.gov) about the paper and report.
 
 
-````
+```
