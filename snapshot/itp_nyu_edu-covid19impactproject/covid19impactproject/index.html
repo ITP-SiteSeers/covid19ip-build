@@ -114,8 +114,8 @@ var metaslider_1506 = function($) {$('#metaslider_1506').addClass('flexslider');
                 pauseOnHover:true,
                 direction:"horizontal",
                 reverse:false,
-                keyboard:1,
-                touch:1,
+                keyboard:true,
+                touch:true,
                 animationSpeed:600,
                 prevText:"Previous",
                 nextText:"Next",
@@ -126,11 +126,6 @@ var metaslider_1506 = function($) {$('#metaslider_1506').addClass('flexslider');
             });
             $(document).trigger('metaslider/initialized', '#metaslider_1506');
         };
- jQuery(document).ready(function($) {
- $('.metaslider').attr('tabindex', '0');
- $(document).on('keyup.slider', function(e) {
-  });
- });
         var timer_metaslider_1506 = function() {
             var slider = !window.jQuery ? window.setTimeout(timer_metaslider_1506, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_1506, 1) : metaslider_1506(window.jQuery);
         };
@@ -144,7 +139,7 @@ var wpData = {"baseUrl":"https:\/\/itp.nyu.edu\/covid19impactproject"};
 <script src="wp-includes/js/underscore.min%EF%B9%96ver=1.13.4.js" id="underscore-js"></script>
 <script src="wp-content/plugins/responsive-lightbox/assets/infinitescroll/infinite-scroll.pkgd.min%EF%B9%96ver=6.6.1.js" id="responsive-lightbox-infinite-scroll-js"></script>
 <script id="responsive-lightbox-js-before">
-var rlArgs = {"script":"magnific","selector":"lightbox","customEvents":"","activeGalleries":true,"disableOn":0,"midClick":false,"preloader":true,"closeOnContentClick":true,"closeOnBgClick":true,"closeBtnInside":false,"showCloseBtn":true,"enableEscapeKey":true,"alignTop":false,"fixedContentPos":"true","fixedBgPos":"auto","autoFocusLast":true,"woocommerce_gallery":false,"ajaxurl":"https:\/\/itp.nyu.edu\/covid19impactproject\/wp-admin\/admin-ajax.php","nonce":"d715cb16ff","preview":false,"postId":4988,"scriptExtension":false};
+var rlArgs = {"script":"magnific","selector":"lightbox","customEvents":"","activeGalleries":true,"disableOn":0,"midClick":false,"preloader":true,"closeOnContentClick":true,"closeOnBgClick":true,"closeBtnInside":false,"showCloseBtn":true,"enableEscapeKey":true,"alignTop":false,"fixedContentPos":"true","fixedBgPos":"auto","autoFocusLast":true,"woocommerce_gallery":false,"ajaxurl":"https:\/\/itp.nyu.edu\/covid19impactproject\/wp-admin\/admin-ajax.php","nonce":"2c2083c9ae","preview":false,"postId":4988,"scriptExtension":false};
 </script>
 <script src="wp-content/plugins/responsive-lightbox/js/front%EF%B9%96ver=2.4.7.js" id="responsive-lightbox-js"></script>
 <script src="../branding/header/matomo-analytics%EF%B9%96ver=6.6.1.js" id="matomoAnalytics-js"></script>
@@ -215,51 +210,266 @@ var rlArgs = {"script":"magnific","selector":"lightbox","customEvents":"","activ
 <body class="home blog wp-embed-responsive">
 
 <div class="wp-site-blocks">
-<div class="wp-block-cover is-light" style="min-height:96vh;aspect-ratio:unset;"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><video class="wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline src="https://itp.nyu.edu/covid19impactproject/wp-content/uploads/2023/05/CoCare_-3.mp4" data-object-fit="cover"></video><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow"><header class="wp-block-template-part"><style>@media(max-width:1400px){ #outer_container{ width: 50% !important; } } @media (max-width:1150px){ #project-title { font-size: 20px !important; } #outer_container{ width: 60% !important; } } @media (max-width:700px){ #project-title { font-size: 18px !important; } } @media (max-width:450px){ #project-title { font-size: 16px !important; } #outer_container{ width: 105% !important; max-width: 105% !important; } .background-banner{ height: 74px!important; } h2.menu-item { font-size: 18px !important; } .hamburger_wrapper{ padding: 52px 14px 14px 40px !important; } } .background-banner{ position: fixed !important; height: 88px; width: 100%; z-index: 10; left:0 !important; top:0 !important; /* background-color: #000000c5; */ background-image: linear-gradient(#00000060, transparent); } #outer_container{ background: none; margin:0 !important; width: 40%; height: 30px !important; position:fixed; z-index: 100000000000 !important; left:-20px !important; top:-34px !important; transition: all .5s ease-in-out; } #outer_container.now-active{ height:110vh !important; } #sticky_container { position: sticky !important; top: 0 !important; left: 0; z-index: 100000000 !important; height: 30px !important; transition: all .5s ease-in-out; } #sticky_container.now-active{ height: 110vh !important; } .hamburger_wrapper { display: flex; top: 0; left: 0; align-items: center; padding: 60px 18px 18px 60px; z-index: 10001; } #project-title { position: sticky !important; margin-left: 20px; font-size: 22px; z-index: 1000; font-weight: 800; color: white !important; text-decoration: none !important; transition: all .3s ease; } #project-title.now-active{ color: #59253A !important; -webkit-text-stroke-width: 0; } #project-title:hover, #project-title.now-active:hover{ color: #00779F !important; text-decoration: none !important; -webkit-text-stroke-width: 0; transition: all .3s ease; } .hamburger-container{ display: flex; justify-content: center; align-items: center; } #hamburger-bg{ height:40px; width: 40px; background-color: white; transition: all .5s ease-in-out; border-radius: 8.6px; cursor: pointer; } #hamburger-bg.now-active{ height:40px; width: 40px; background-color: #F2EDD1 !important; transition: all .5s ease-in-out; cursor: pointer !important; z-index: 1000 !important; } #hamburger { width: 20px; height: 0px; position: relative; cursor: pointer; outline: none; z-index: 1000; top: 12px; left:10px; } #hamburger span { display: block; position: absolute; height: 2.2px; width: 100%; background: black; border-radius: 9px; opacity: 1; transform: rotate(0deg); transition: all .5s ease-in-out; } #hamburger span:nth-child(1) { top: 0px; transform-origin: left center; } #hamburger span:nth-child(2) { top: 7px; transform-origin: center; } #hamburger span:nth-child(3) { top: 14px; transform-origin: left center; } #hamburger.close span:nth-child(1) { transform: rotate(45deg); } #hamburger.close span:nth-child(2) { width: 0%; opacity: 0; transition: .1s; } #hamburger.close span:nth-child(3) { transform: rotate(-45deg); } #nav-menu { position: relative; transform: translate(-100vw, -100px); opacity: 0; z-index: 5; transition: .5s ease; height: 100%; } #nav-menu.now-active { transform: translate(0, -100px); transition:all .5s ease; opacity: 1; background-color: #F2EDD1 !important; width: 100%; z-index: 5; height: 100%; } #nav-container { display: flex; flex-direction: column; align-items: center; justify-content: center; } .nav-list { padding: 0 !important; list-style-type: none; font-size: 18px; text-decoration: none; color: #59253A; text-align: center; } .nav-list li:first-child { margin-top: 160px !important; } h2.menu-item{ font-size:18px !important; text-decoration: none !important; color: #59253A !important; background-color: none !important; height: 36px !important; width: 240px !important; border-radius: 20px; text-align: left; border:none; padding-left:10px; font-weight: 700; transition: all .5s ease-in-out; } h2.menu-item:hover{ font-size:18px !important; color:white !important; background-color: #59253A !important; text-decoration: none !important; font-weight: 800; transition: all .5s ease-in-out; } li a{ text-decoration: none !important; } </style>
+<div class="wp-block-cover is-light" style="min-height:96vh;aspect-ratio:unset;"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><video class="wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline src="https://itp.nyu.edu/covid19impactproject/wp-content/uploads/2023/05/CoCare_-3.mp4" data-object-fit="cover"></video><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow"><header class="wp-block-template-part"><style>/* Responsive settings */
+@media(max-width:1400px){
+  #outer_container { width: 100% !important; }
+}
+@media (max-width:1150px){
+  #outer_container { width: 100% !important; }
+}
+@media (max-width:700px){
+  #project-title img { height: 50px; }
+}
+@media (max-width:450px){
+  #outer_container { width: 100% !important; max-width: 100% !important; }
+  .background-banner { height: 75px !important; }
+  .menu-item { font-size: 18px !important; }
+  .hamburger_wrapper { padding: 10px 14px !important; }
+}
+
+/* Nav Bar */
+.background-banner {
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  background-color: black;
+}
+#outer_container {
+  margin: 0;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  transition: all 0.5s ease;
+}
+#sticky_container {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  transition: all 0.5s ease;
+}
+.hamburger_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#project-title { order: 1; }
+#project-title img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+.hamburger-container {
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hamburger-bg {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  transition: all 0.5s ease;
+  border-radius: 8.6px;
+  cursor: pointer;
+}
+#hamburger-bg.now-active { background-color: black; }
+#hamburger {
+  width: 20px;
+  height: 0;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  z-index: 1000;
+  top: 12px;
+  left: 40px;
+}
+#hamburger span {
+  display: block;
+  position: absolute;
+  height: 2.2px;
+  width: 100%;
+  background: white;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+#hamburger span:nth-child(1) { top: 0; transform-origin: left center; }
+#hamburger span:nth-child(2) { top: 7px; transform-origin: center; }
+#hamburger span:nth-child(3) { top: 14px; transform-origin: left center; }
+#hamburger.close span:nth-child(1) { transform: rotate(45deg); }
+#hamburger.close span:nth-child(2) { width: 0; opacity: 0; transition: 0.1s; }
+#hamburger.close span:nth-child(3) { transform: rotate(-45deg); }
+
+/* Dropdown menu */
+#nav-menu {
+  display: none; 
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s ease;
+  z-index: 900000000;
+}
+#nav-menu.now-active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  background-color: black;
+  padding: 20px 40px 20px 40px; /* Left padding set to 40px */
+}
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  padding-left: 0; /* Remove extra left padding */
+  border-left: 2px solid white;
+}
+.nav-list li {
+  margin: 10px 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+#nav-menu.now-active .nav-list li {
+  opacity: 1;
+  transform: translateY(0);
+}
+#nav-menu.now-active .nav-list li:nth-child(1) { transition-delay: 0.1s; }
+#nav-menu.now-active .nav-list li:nth-child(2) { transition-delay: 0.2s; }
+#nav-menu.now-active .nav-list li:nth-child(3) { transition-delay: 0.3s; }
+#nav-menu.now-active .nav-list li:nth-child(4) { transition-delay: 0.4s; }
+#nav-menu.now-active .nav-list li:nth-child(5) { transition-delay: 0.5s; }
+#nav-menu.now-active .nav-list li:nth-child(6) { transition-delay: 0.6s; }
+#nav-menu.now-active .nav-list li:nth-child(7) { transition-delay: 0.7s; }
+h2.menu-item {
+  font-size: 18px !important;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  height: 36px;
+  text-align: left;
+  border: none;
+  margin: 0;
+  padding-left: 20px; /* Indent text relative to the vertical line */
+  font-weight: 700;
+  transition: all 0.3s ease;
+  display: inline-block;
+  line-height: 36px;
+}
+h2.menu-item:hover { border-bottom: 2px solid white; }
+li a { text-decoration: none; }
+.navContainer{
+position: fixed;
+left: 0;
+z-index: 100000000000000 !important;
+}
+</style>
+<div class="navContainer">
 <div class="background-banner"></div>
 <div id="outer_container">
-<div id="sticky_container">
-<div class="hamburger_wrapper">
-<div class="hamburger-container">
-<div id="hamburger-bg" onclick="toggleOnOff()">
-<div id="hamburger"> <span></span> <span></span> <span></span></div>
+  <div id="sticky_container">
+    <div class="hamburger_wrapper">
+      <a href="index.html" id="project-title">
+        <img decoding="async" src="wp-content/uploads/2025/02/5071739289813_.pic_.jpg" alt="COVID-19 IMPACT PROJECT">
+      </a>
+      <div class="hamburger-container">
+        <div id="hamburger-bg" onclick="toggleOnOff()">
+          <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="nav-menu">
+      <ul class="nav-list">
+        <li>
+          <a href="nyc-map/index.html">
+            <h2 class="menu-item">NYC Map</h2>
+          </a>
+        </li>
+        <li>
+          <a href="memorials/index.html">
+            <h2 class="menu-item">Memorials</h2>
+          </a>
+        </li>
+        <li>
+          <a href="covid19-dashboard/index.html">
+            <h2 class="menu-item">Dashboard</h2>
+          </a>
+        </li>
+        <!--
+        <li>
+          <a href="">
+            <h2 class="menu-item">Research</h2>
+          </a>
+        </li>
+        -->
+        <li>
+          <a href="data-storytelling/index.html">
+            <h2 class="menu-item">Data Storytelling</h2>
+          </a>
+        </li>
+        <li>
+          <a href="media-gallery/index.html">
+            <h2 class="menu-item">Media Gallery</h2>
+          </a>
+        </li>
+        <li>
+          <a href="calendar/index.html">
+            <h2 class="menu-item">Calendar</h2>
+          </a>
+        </li>
+        <li>
+          <a href="about/index.html">
+            <h2 class="menu-item">About Us</h2>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 </div>
-<a href="index.html" id="project-title">COVID-19 IMPACT PROJECT</a></div>
-<div id="nav-menu">
-<ul class="nav-list">
-<div id="nav-container">
- 	<li><a href="nyc-map/index.html">
-<h2 class="menu-item">NYC Map</h2>
-</a></li>
- 	<li><a href="memorials/index.html">
-<h2 class="menu-item">Memorials</h2>
-</a></li>
- 	<li><a href="covid19-dashboard/index.html">
-<h2 class="menu-item">Dashboard</h2>
-</a></li>
-<!--
- 	<li><a href="">
-<h2 class="menu-item">Research</h2>
-</a></li>
--->
- 	<li><a href="data-storytelling/index.html">
-<h2 class="menu-item">Data Storytelling</h2>
-</a></li>
- 	<li><a href="media-gallery/index.html">
-<h2 class="menu-item">Media Gallery</h2>
-</a></li>
- 	<li><a href="calendar/index.html">
-<h2 class="menu-item">Events</h2>
-</a></li>
- 	<li><a href="about/index.html">
-<h2 class="menu-item">About Us</h2>
-</a></li>
-<span style="margin-top:60px"></span></div></ul>
-</div>
-</div>
-</div>
-<script type="text/javascript"> var hamburger = document.getElementById("hamburger"); var navMenu = document.getElementById("nav-menu"); var hamburgerBg = document.getElementById("hamburger-bg"); var projectTitle = document.getElementById("project-title"); var outerContainer = document.getElementById("outer_container"); var stickyContainer = document.getElementById("sticky_container"); function toggleOnOff() { hamburger.classList.toggle("close"); navMenu.classList.toggle("now-active"); hamburgerBg.classList.toggle("now-active"); projectTitle.classList.toggle("now-active"); outerContainer.classList.toggle("now-active"); stickyContainer.classList.toggle("now-active"); } document.addEventListener('click', function(event) { if (!event.target.closest('#outer_container')) { hamburger.classList.remove("close"); navMenu.classList.remove("now-active"); hamburgerBg.classList.remove("now-active"); projectTitle.classList.remove("now-active"); outerContainer.classList.remove("now-active"); stickyContainer.classList.remove("now-active"); } }); </script></header>
+
+<script type="text/javascript">
+  var hamburger = document.getElementById("hamburger");
+  var navMenu = document.getElementById("nav-menu");
+  var hamburgerBg = document.getElementById("hamburger-bg");
+  var projectTitle = document.getElementById("project-title");
+  var outerContainer = document.getElementById("outer_container");
+  var stickyContainer = document.getElementById("sticky_container");
+
+  function toggleOnOff() {
+    hamburger.classList.toggle("close");
+    navMenu.classList.toggle("now-active");
+    hamburgerBg.classList.toggle("now-active");
+    projectTitle.classList.toggle("now-active");
+    outerContainer.classList.toggle("now-active");
+    stickyContainer.classList.toggle("now-active");
+  }
+  
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('#outer_container')) {
+      hamburger.classList.remove("close");
+      navMenu.classList.remove("now-active");
+      hamburgerBg.classList.remove("now-active");
+      projectTitle.classList.remove("now-active");
+      outerContainer.classList.remove("now-active");
+      stickyContainer.classList.remove("now-active");
+    }
+  });
+</script>
+.</header>
 
 
 <h2 class="wp-block-heading about-title video-text-overlay has-white-color has-text-color" style="font-size:clamp(26.465px, 1.654rem + ((1vw - 3.2px) * 1.931), 45px);">Examining the impact of the pandemic through data storytelling<br><br></h2>
@@ -395,7 +605,7 @@ Hover over NYC’s map to find out mortality versus income rates in each neighbo
   </div>
     </div>
     <div class="right-container">
-        <iframe src="https://iszhiyang.com/nyc-map/" class="map-iframe" scrolling="no"></iframe>
+        <iframe src="https://zhiyangwa.github.io/nyc-map/" class="map-iframe" scrolling="no"></iframe>
     </div>
 </div>
 
@@ -488,7 +698,7 @@ Hover over NYC’s map to find out mortality versus income rates in each neighbo
 
 <div class="container">
  <div class="right-container">
-        <iframe src="https://iszhiyang.com/globe/index.html" class="map-iframe" scrolling="no"></iframe>
+        <iframe src="https://iszhiyang.com/globe/" class="map-iframe" scrolling="no"></iframe>
     </div>
     <div class="left-container">
   <div class="contentBox">
@@ -555,7 +765,7 @@ Hover over NYC’s map to find out mortality versus income rates in each neighbo
 
 <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-<p class="has-black-color has-text-color has-medium-font-size">Here at New York University’s Tisch/ITP program, we offer a graduate course that broadens the exploration of pandemic data and invites graduate students from diverse schools and departments within NYU to contribute to the COVID-19 Impact Project according to their skills and interests in emerging media.<br><br>Students learn the fundamentals of data literacy, study historical uses of data visualization for social justice, explore tools for extracting stories from data, and contemplate community grief and mourning for mass death events.</p>
+<p class="has-black-color has-text-color has-medium-font-size">Here at New York University’s Tisch/ITP program, we offer a graduate course that broadens the exploration of pandemic data and invites graduate students from diverse schools and departments within NYU to contribute to the COVID-19 Impact Project according to their skills and interests in emerging media.<br><br>Students learn the fundamentals of data literacy, study historical uses of data visualization for social justice, explore tools for extracting stories from data, and contemplate community grief and mourning for mass death events. Students apply their learning to a passion project to tell a human-centered data rich story.</p>
 </div>
 
 
@@ -565,14 +775,15 @@ Hover over NYC’s map to find out mortality versus income rates in each neighbo
     <div id="metaslider_container_1506">
         <div id="metaslider_1506">
             <ul class='slides'>
-                <li style="display: block; width: 100%;" class="slide-1520 ms-image " aria-roledescription="slide" aria-label="slide-1520"><img src="wp-content/uploads/2023/05/extract1-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1520" title="extract1" /><div class="caption-wrap"><div class="caption">Liraz Lilo Primo: Political Decisions and the Course of the Pandemic in Israel</div></div></li>
-                <li style="display: none; width: 100%;" class="slide-1522 ms-image " aria-roledescription="slide" aria-label="slide-1522"><img src="wp-content/uploads/2023/05/Screen-Shot-2023-04-09-at-1.20.00-PM-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1522" title="Screen Shot 2023-04-09 at 1.20.00 PM" /><div class="caption-wrap"><div class="caption">Lilo Primo: “Political Decisions and the Course of the Pandemic in Israel“</div></div></li>
-                <li style="display: none; width: 100%;" class="slide-1523 ms-image " aria-roledescription="slide" aria-label="slide-1523"><img src="wp-content/uploads/2023/05/medical-heroes-messages-collage-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1523" title="medical-heroes-messages-collage" /><div class="caption-wrap"><div class="caption">Tirta Rachman (Tito): Indonesian Medical Heros</div></div></li>
-                <li style="display: none; width: 100%;" class="slide-1524 ms-image " aria-roledescription="slide" aria-label="slide-1524"><img src="wp-content/uploads/2023/05/jasonlipschutzfinalproject-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1524" title="jasonlipschutzfinalproject" /><div class="caption-wrap"><div class="caption">Jason Lipschutz: COVID-19 Data Visualization using Tableau</div></div></li>
-                <li style="display: none; width: 100%;" class="slide-1526 ms-image " aria-roledescription="slide" aria-label="slide-1526"><img src="wp-content/uploads/2023/05/patrickspausterfinalproject-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1526" title="patrickspausterfinalproject" /><div class="caption-wrap"><div class="caption">Patrick Spauster: Developed App using R to Allow Users to View Cases and Deaths by County Over Time for the Entire Pandemic</div></div></li>
-                <li style="display: none; width: 100%;" class="slide-1594 ms-image " aria-roledescription="slide" aria-label="slide-1594"><img src="wp-content/uploads/2023/05/ruixinlifinal-project-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1594" title="ruixinlifinal-project" /><div class="caption-wrap"><div class="caption">Ruixin Li: Effect of Travel Ban on Chinese CItizens and Residents in America</div></div></li>
-                <li style="display: none; width: 100%;" class="slide-1614 ms-image " aria-roledescription="slide" aria-label="slide-1614"><img src="wp-content/uploads/2023/05/screen-shot-2021-12-07-at-11.35.31-pm-1-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1614" title="screen-shot-2021-12-07-at-11.35.31-pm" /><div class="caption-wrap"><div class="caption">Yihan Zhao: “Detached” Economic Realities of the COVID-19 Era</div></div></li>
-                <li style="display: none; width: 100%;" class="slide-1525 ms-image " aria-roledescription="slide" aria-label="slide-1525"><img src="wp-content/uploads/2023/05/rui-shangloveand-loss-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1525" title="rui-shangloveand-loss" /><div class="caption-wrap"><div class="caption">Rui Shang: Love &amp; Loss – Exploring Data Humanism for COVID-19 Data Visualizations</div></div></li>
+                <li style="display: block; width: 100%;" class="slide-1520 ms-image " aria-roledescription="slide" aria-label="slide-1520"><img src="wp-content/uploads/2025/02/ITPFallClass2024-scaled-700x400.jpeg" height="400" width="700" alt="" class="slider-1506 slide-1520" title="ITPFallClass2024" /><div class="caption-wrap"><div class="caption"><div>Fall 2024 Cohorts Group Photo</div></div></div></li>
+                <li style="display: none; width: 100%;" class="slide-6354 ms-image " aria-roledescription="slide" aria-label="slide-6354"><img src="wp-content/uploads/2023/05/extract1-700x400.png" height="400" width="700" alt="A line graph showing how the Israeli PM reduces epidemiogical investigation time over a few months" class="slider-1506 slide-6354" title="extract1" /><div class="caption-wrap"><div class="caption"><div>Liraz Lilo Primo: Political Decisions and the Course of the Pandemic in Israel</div></div></div></li>
+                <li style="display: none; width: 100%;" class="slide-1522 ms-image " aria-roledescription="slide" aria-label="slide-1522"><img src="wp-content/uploads/2023/05/Screen-Shot-2023-04-09-at-1.20.00-PM-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1522" title="Screen Shot 2023-04-09 at 1.20.00 PM" /><div class="caption-wrap"><div class="caption"><div>Lilo Primo: “Political Decisions and the Course of the Pandemic in Israel“</div></div></div></li>
+                <li style="display: none; width: 100%;" class="slide-1523 ms-image " aria-roledescription="slide" aria-label="slide-1523"><img src="wp-content/uploads/2023/05/medical-heroes-messages-collage-700x400.png" height="400" width="700" alt="A collage of messages for medical heroes" class="slider-1506 slide-1523" title="medical-heroes-messages-collage" /><div class="caption-wrap"><div class="caption"><div>Tirta Rachman (Tito): Indonesian Medical Heros</div></div></div></li>
+                <li style="display: none; width: 100%;" class="slide-1524 ms-image " aria-roledescription="slide" aria-label="slide-1524"><img src="wp-content/uploads/2023/05/jasonlipschutzfinalproject-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1524" title="jasonlipschutzfinalproject" /><div class="caption-wrap"><div class="caption"><div>Jason Lipschutz: COVID-19 Data Visualization using Tableau</div></div></div></li>
+                <li style="display: none; width: 100%;" class="slide-1526 ms-image " aria-roledescription="slide" aria-label="slide-1526"><img src="wp-content/uploads/2023/05/patrickspausterfinalproject-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1526" title="patrickspausterfinalproject" /><div class="caption-wrap"><div class="caption"><div>Patrick Spauster: Developed App using R to Allow Users to View Cases and Deaths by County Over Time for the Entire Pandemic</div></div></div></li>
+                <li style="display: none; width: 100%;" class="slide-1594 ms-image " aria-roledescription="slide" aria-label="slide-1594"><img src="wp-content/uploads/2023/05/ruixinlifinal-project-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1594" title="ruixinlifinal-project" /><div class="caption-wrap"><div class="caption"><div>Ruixin Li: Effect of Travel Ban on Chinese CItizens and Residents in America</div></div></div></li>
+                <li style="display: none; width: 100%;" class="slide-1614 ms-image " aria-roledescription="slide" aria-label="slide-1614"><img src="wp-content/uploads/2023/05/screen-shot-2021-12-07-at-11.35.31-pm-1-700x400.png" height="400" width="700" alt="A title slide saying &quot;The Two Economic Realities of COVID-19 DETACHED&quot;" class="slider-1506 slide-1614" title="screen-shot-2021-12-07-at-11.35.31-pm" /><div class="caption-wrap"><div class="caption"><div>Yihan Zhao: “Detached” Economic Realities of the COVID-19 Era</div></div></div></li>
+                <li style="display: none; width: 100%;" class="slide-1525 ms-image " aria-roledescription="slide" aria-label="slide-1525"><img src="wp-content/uploads/2023/05/rui-shangloveand-loss-700x400.png" height="400" width="700" alt="" class="slider-1506 slide-1525" title="rui-shangloveand-loss" /><div class="caption-wrap"><div class="caption"><div>Rui Shang: Love &amp; Loss – Exploring Data Humanism for COVID-19 Data Visualizations</div></div></div></li>
             </ul>
         </div>
         
@@ -869,7 +1080,7 @@ Hover over NYC’s map to find out mortality versus income rates in each neighbo
 </script>
 <script src="wp-content/plugins/mystickymenu/js/morphext/morphext.min%EF%B9%96ver=2.7.2.js" id="morphext-js-js" defer data-wp-strategy="defer"></script>
 <script id="welcomebar-frontjs-js-extra">
-var welcomebar_frontjs = {"ajaxurl":"https:\/\/itp.nyu.edu\/covid19impactproject\/wp-admin\/admin-ajax.php","days":"Days","hours":"Hours","minutes":"Minutes","seconds":"Seconds","ajax_nonce":"bc75ea4368"};
+var welcomebar_frontjs = {"ajaxurl":"https:\/\/itp.nyu.edu\/covid19impactproject\/wp-admin\/admin-ajax.php","days":"Days","hours":"Hours","minutes":"Minutes","seconds":"Seconds","ajax_nonce":"24cae2ab51"};
 </script>
 <script src="wp-content/plugins/mystickymenu/js/welcomebar-front%EF%B9%96ver=2.7.2.js" id="welcomebar-frontjs-js" defer data-wp-strategy="defer"></script>
 <script src="wp-content/plugins/mystickymenu/js/detectmobilebrowser%EF%B9%96ver=2.7.2.js" id="detectmobilebrowser-js" defer data-wp-strategy="defer"></script>
