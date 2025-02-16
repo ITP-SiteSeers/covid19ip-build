@@ -3,6 +3,16 @@
 ```
 
 # search: <iframe src="https
+## 2025-02-15
+
+<iframe src="https://zhiyangwa.github.io/nyc-map/" class="map-iframe" scrolling="no"></iframe>
+<iframe src="https://iszhiyang.com/globe/" class="map-iframe" scrolling="no"></iframe>
+<iframe src="https://jht1493.net/a1/skt/covid19_heal_ticker/" frameborder="0" id="scaled-iframe" scrolling="no"></iframe>
+<iframe src="https://jht1493.net/a1/skt/covid19-bklyn/" frameborder="0" id="scaled-iframe" scrolling="no"></iframe>
+<iframe src="https://jht1493.net/a1/skt/covid19-nyc/" frameborder="0" id="scaled-iframe"
+<iframe src="https://iszhiyang.com/nyc-covid-map/" id="map-iframe-id" title="map" scrolling="no"></iframe>
+
+# --
 
 <iframe src="https://editor.p5js.org/Llio2493/full/axtxL8AkK" id="iframe-id"></iframe>
 <iframe src="https://iszhiyang.com/globe/index.html" class="map-iframe" scrolling="no"></iframe>
